@@ -10,14 +10,14 @@ const userMail = prompt("immetti la tua mail");
 
 for (let i = 0; i < mailList.length; i++) {
 
+
     if (mailList[i] == userMail) {
         
         console.log('Accesso consentito')
 
-    } else {
-
-        console.log('Accesso negato')
-
     }
 
 }
+
+
+
