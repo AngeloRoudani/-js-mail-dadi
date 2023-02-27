@@ -4,20 +4,21 @@
         _SE la mail immessa non corrisponde a nessuna mail nella lista allora stampa "accesso negato"
 */
 
-let mailList = ["enrico@fermi.it" , "sauron@darklord.com" , "tony@stark.av" , "cassius@clay.us" , "edgarallan@poe.us" ];
-     
-const userMail = prompt("immetti la tua mail");
+const mailList = ["enrico@fermi.it" , "sauron@darklord.com" , "tony@stark.av" , "cassius@clay.us" , "edgarallan@poe.us" ];
+ 
 
 for (let i = 0; i < mailList.length; i++) {
 
-    if (userMail = mailList[i]) {
+    let userMail = prompt("immetti la tua mail");
+
+    if (userMail == mailList[i]) {
 
         console.log('Accesso consentito')
 
     } else {
 
         console.log('Accesso negato')
-        
+
     }
 
 }
