@@ -6,18 +6,18 @@
 
 const mailList = ["enrico@fermi.it" , "sauron@darklord.com" , "tony@stark.av" , "cassius@clay.us" , "edgarallan@poe.us" ];
  
-const userMail = prompt("immetti la tua mail");
+let userMail = prompt("immetti la tua mail");
+
+const validMail = mailList[i];
 
 for (let i = 0; i < mailList.length; i++) {
 
-
-    if (mailList[i] == userMail) {
-        
-        console.log('Accesso consentito')
-
-    }
-
+    console.log(mailList[i])
 }
 
-
+if (userMail == i) {
+    console.log('accesso consentito')
+} else {
+    console.log('accesso negato')
+}
 
